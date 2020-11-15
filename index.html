@@ -1,7 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>David Anderson | Home Page</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet"/>
+    <link href="/Content/jquery-ui.theme.css" rel="stylesheet"/>
+    <link href="/Content/Styles/spacelab.css" rel="stylesheet"/>
+    <link href="/Content/Styles/custom.css" rel="stylesheet"/>
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>Placeholder Index file.</p>
+    <div class="content">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">David Anderson</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="myTopnav">
+                        
+                        <li><a href="/Home/Resume">R&eacute;sum&eacute;</a></li>
+                        <li><a href="/Home/Projects">Projects</a></li>
+                        <li><a href="/Home/Classmates">Classmates</a></li>
+                        
+                        <li><a href="/Home/Stuff">Playground</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/Home/Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="mainContent">
+<main>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="box">
+                <div class="container text-center">
+                    <h1>About Me</h1>
+                    <article class="col-md-offset-2 col-md-8 text-center">
+                        <p>
+                            I'm a developer with a logical mindset and a wide variety of skills, with the ability to quickly learn new topics.
+                            My current passions include small electronics, IOT, and automating systems.
+                            I'm an Eagle Scout in the Boy Scouts of America. 
+                            I love researching new technologies and enjoy VR, 3D printing, and small electronics.
+                        </p>
+                    </article>
+                </div>
+            </div>
+                <div class="box">                    
+                    <h2 class="text-center">Check out my latest projects.</h2>
+                    <div class="Project-Preview" style="margin: auto;">
+                        <a href="/Home/Projects">                            
+                            <div id="css3slider">
+                                <img src="/Content/images/Pet_Resort.png" class="Project-Image" />
+                                <img src="/Content/images/Tower_Defense.png" class="Project-Image Left-A-Bit" />
+                                <img src="/Content/images/uStore.png" class="Project-Image Left-A-Bit" />
+                                <img src="/Content/images/SuperHero.png" class="Project-Image Left-A-Bit" />
+                                <img src="/Content/images/Console_Dungeon.png" class="Project-Image Left-A-Bit" />
+                                <img src="/Content/images/World_Explore.png" class="Project-Image Left-A-Bit" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            
+        </div>
+        <div class="col-md-4">
+            <article class="box weather">
+                <div class="icon bubble black col-xs-offset-2 col-xs-10">
+                    <div class="weather-icon" id="09" style="display:none;">
+                        <div class="icon">
+                            <div class="cloud"></div>
+                            <div class="rain"></div>
+                            <div class="rain"></div>
+                        </div>
+                    </div>
+                    <div class="weather-icon" id="11" style="display:none;">
+                        <div class="icon">
+                            <div class="cloud"></div>
+                            <div class="bolt"></div>
+                            <div class="bolt bolt2"></div>
+                        </div>
+                    </div>
+                    <div class="weather-icon" id="13" style="display:none;">
+                        <div class="icon">
+                            <div class="cloud white"></div>
+                            <div class="flake"></div>
+                            <div class="flake flake2"></div>
+                        </div>
+                    </div>
+                    <div class="weather-icon" id="04" style="display:none;">
+                        <div class="icon">
+                            <div class="cloud white">
+                                <div class="cloudy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-icon" id="02" style="display:none;">
+                        <div class="icon">
+                            <div class="cloud white">
+                                <div class="sunny"><div class="m-rays"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weather-icon" id="01" style="display:none;">
+                        <div class="icon">
+                            <div class="sun"><div class="rays"></div></div>
+                        </div>
+                    </div>
+                    <div class="weathericon" id="50" style="display:none;">
+                        <div class="icon">
+                            <div class="fog"><div class="rays"></div></div>
+                        </div>
+                    </div>
+                    <div class="weather-icon" id="10" style="display:none;">
+                        <div class="icon">
+                            <div class="cloud white">
+                                <div class="sunny"><div class="m-rays"></div></div>
+                                <div class="rain"></div>
+                                <div class="rain"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1>Saturday</h1>
+                <span class="temp" id="CurrentTemp"></span>
+                
+                <div class="clearfix"></div>
+            </article>
+
+            <div class="box updates-container item-container">
+                <h2>Updates</h2>
+                <ol>
+                    <li>Added Pages</li>
+                    
+                    
+                    <li>Added Theme Change at Night</li>
+                    <li>Converted to MVC</li>
+                    <li>Added Playground</li>
+                    <li>Email functional</li>
+                    
+                    
+                    <li>Added Projects</li>
+                    <li>Added Weather Card</li>
+                    <li>Added Project Previews</li>
+                </ol>
+                <div>
+                    <h4>Feel Free to look around.</h4>
+                    <p>The theme changes at 7am and 6pm(CST), so come back later.</p>
+                </div>
+            </div>
+
+            <div class="">
+                <article class="col-sm-offset-0 col-sm-5  col-xs-offset-2">
+                    <a class="btn btn-primary index-btn" href="/Home/Contact" style="font-size:2em;">Contact Me</a>
+                </article>
+                <article class="col-sm-offset-1 col-sm-5 col-xs-offset-2">
+                    <a class="btn btn-primary index-btn" href="/Home/Resume" style="font-size:2em;">R&eacute;sum&eacute;</a>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</main>
+        </div>
+    </div>
+    <footer class="panel-footer footer">
+        <a href="http://www.AndersonDev.net">&copy; 2020 David Anderson</a>
+    </footer>
+
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+<script src="/Scripts/respond.js"></script>
+
+    <script src="/Scripts/jquery-ui.js"></script>
+
+    
+    <script>
+        //parse weather information from openweathermap.org
+        //Store the URI that points to the full weather API
+        //(URI = Universal Resource Indicator (usually points to info or data))
+        //(URL = Universal Resource Locator (Usually points to a website))
+        var uri = "http://api.openweathermap.org/data/2.5/weather?zip=64063,us&units=imperial&appid=29012140f949e20310424d630c556df0";
+        //for celsius it is &units=metric&
+
+        //recieve the json response and parse it and push it to the
+        //div declared above.
+        $(function () {
+            $.getJSON(uri).done(function (data) {
+                //var ftemp = Math.round((data.main.temp - 273.15) * 1.8 + 32);
+                var ftemp = Math.round(data.main.temp);
+                document.getElementById("CurrentTemp").innerHTML += "<span class='temp' id='CurrentTemp'>" + ftemp + "&deg;F</span>";
+                var weatherID = "";
+                //navigator.geolocation.getCurrentPosition()
+                console.log(data.weather[0].icon);
+                var iconNbr = (data.weather[0].icon).substring(0, 2);
+                //console.log(iconNbr);
+                if (iconNbr == "03") {
+                    iconNbr = "04";
+                }
+
+                //$("#" + '10').css("display", "");
+                $("#" + iconNbr).css("display", "");
+            });
+        });
+    </script>
+
+
+
+    <!-- Theme Change at 7am and 7pm
+    <script type="text/javascript">
+        var currentTime = new Date().getHours();
+        console.log(currentTime);
+
+
+        if (7 <= currentTime && currentTime < 19) {
+            document.getElementById('Theme-styles').href = '~/Content/Styles/spacelab.css';
+        }
+
+        else {
+            document.getElementById('Theme-styles').href = '~/Content/Styles/slate.css';
+        }
+    </script> -->
+
+
+    <!-- Highlight active nav item -->
+    <script type="text/javascript">
+        //console.log(window.location.pathname); //current value for URL
+        $('#myTopnav li').each(function () {
+            if ("/" + $(this).find('a').attr('href') == window.location.pathname) {
+                $(this).addClass('active');
+            }
+        });
+
+        
+
+    </script>
+
+    <!-- Responsive Navigation Script -->
+    <script type="text/javascript">
+        //Now in JavaScript mode
+        function responsiveNav() {
+            var topnav = document.getElementById('topnav');
+            
+            if (!topnav.classList.contains('responsive')) {
+                topnav.classList.add('responsive');
+                document.getElementById('jumbotron').style.marginTop = '400px';
+            }
+            else {
+                topnav.classList.remove('responsive');
+                document.getElementById('jumbotron').style.marginTop = '20px';
+            }
+
+            //Alternative to the above code
+            //topnav.classList.toggle('responsive');
+
+        }
+    </script>
+
 </body>
 </html>
